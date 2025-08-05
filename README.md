@@ -21,6 +21,7 @@
 - [konikoni428](./member_project/konikoni428/)
 - [reodon](./member_project/reodon/)
 - [YutakaKOTANI](./member_project/YutakaKOTANI/)
+- [ICHIKEN](./member_project/ichiken/)
 
 
 ## 各種リスト
@@ -90,6 +91,15 @@ Files:
 
 
 
+
+
+
+
+## [ICHIKEN](./member_project/ichiken/)：OPAMP回路
+こちらの「[電気系ものづくりYouTuberのイチケンさんがオープンソース半導体でOPAMP設計に関するセミナーをTECHNO-FRONTIER 2025で実施します](https://ishi-kai.org/seminar/2025/07/20/Seminar_TECHNOFRONTIER2025_seminar_ichiken.html)」で案内した[イチケンさん](https://www.youtube.com/@ICHIKEN1)が設計・レイアウトしたOPAMPとなります。  
+
+- ![回路図](./member_project/ichiken/images/opamp_sch.png)
+- ![レイアウト](./member_project/ichiken/images/opamp_gds.png)
 
 
 # 測定会
