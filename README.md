@@ -16,27 +16,27 @@
 
 
 # 参加者リスト
-## [個人参加者]()
+## [個人参加者](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-2/tree/main#%E5%80%8B%E4%BA%BA%E5%8F%82%E5%8A%A0%E8%80%85%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3)
 - [aidera](./member_project/aidera/)
 - [arstopia](./member_project/arstopia/)
 - [konikoni428](./member_project/konikoni428/)
 - [reodon](./member_project/reodon/)
 - [YutakaKOTANI](./member_project/YutakaKOTANI/)
 
-## [グループワーク参加者]()
+## [グループワーク参加者](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-2/tree/main?tab=readme-ov-file#%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%83%AF%E3%83%BC%E3%82%AF%E5%8F%82%E5%8A%A0%E8%80%85-1)
 [ISHI会版OpenMPW PTC06-2のOPAMPのグループワーク](https://ishi-kai.org/openmpw/shuttle/ptc06/2025/06/14/shuttle_ISHI-Kai_OpenMPW-PTC06-2_OPAMP_Team.html)参加者です。  
-### [Team Ando](./member_project/GroupWork/Team_Ando/)
+### [Team Ando](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-2/tree/main?tab=readme-ov-file#team-ando-1)
 - [dokunira](./member_project/GroupWork/Team_Ando/dokunira/)
-- [forests](./member_project/GroupWork/Team_Ando/forests/)
+- [foorests](./member_project/GroupWork/Team_Ando/foorests/)
 - [XianDIY](./member_project/GroupWork/Team_Ando/ugeugeHigh/)
 - [Maehashi](./member_project/GroupWork/Team_Ando/YuMaehashi/)
-### [Team Masahiro]() 
+### [Team Masahiro](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-2/tree/main?tab=readme-ov-file#team-masahiro-1) 
 - [Masahiro](./member_project/GroupWork/Team_masahiro/)
-### [Team ICHIKEN]
+### [Team ICHIKEN](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-2/tree/main?tab=readme-ov-file#team-ichiken-1)
 - [ICHIKEN](./member_project/GroupWork/Team_ichiken/)
 
-## [スポンサー参加者]()
-### [サンケン電気]()
+## [スポンサー参加者](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-2/tree/main?tab=readme-ov-file#%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E5%8F%82%E5%8A%A0%E8%80%85-1)
+### [サンケン電気](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-2/tree/main?tab=readme-ov-file#%E3%82%B5%E3%83%B3%E3%82%B1%E3%83%B3%E9%9B%BB%E6%B0%97-1)
 - [iijima](./member_project/sanken/iijima/)
 - [liuyi](./member_project/sanken/liuyi/)
 - [shishido](./member_project/sanken/shishido/)
@@ -47,7 +47,6 @@
 
 
 ## 各種リスト
-- [メンバーリスト](docs/member_list.pdf)
 - [ピンリスト](docs/pin_list.pdf)
 
 
