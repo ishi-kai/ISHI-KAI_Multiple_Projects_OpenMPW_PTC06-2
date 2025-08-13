@@ -1,0 +1,49 @@
+* Created by KLayout
+
+* cell TOP
+* pin ib
+* pin vout
+* pin vdd
+* pin vinn
+* pin vinp
+* pin vss
+.SUBCKT TOP 3 7 8 10 11 14
+* net 3 ib
+* net 7 vout
+* net 8 vdd
+* net 10 vinn
+* net 11 vinp
+* net 14 vss
+* device instance $1 r0 *1 203.1,8.1 NMOS
+M$1 7 3 14 14 NMOS L=1U W=80U AS=84P AD=84P PS=126U PD=126U
+* device instance $21 r180 *1 178.1,36.4 NMOS
+M$21 6 11 4 14 NMOS L=2U W=100U AS=110P AD=110P PS=132U PD=132U
+* device instance $31 m0 *1 93.5,36.4 NMOS
+M$31 6 10 5 14 NMOS L=2U W=100U AS=110P AD=110P PS=132U PD=132U
+* device instance $41 r0 *1 28.7,8.1 NMOS
+M$41 9 3 14 14 NMOS L=2U W=20U AS=24P AD=24P PS=36U PD=36U
+* device instance $46 r0 *1 3.7,8.1 NMOS
+M$46 3 3 14 14 NMOS L=2U W=20U AS=24P AD=24P PS=36U PD=36U
+* device instance $51 r0 *1 125.8,8.1 NMOS
+M$51 6 3 14 14 NMOS L=2U W=20U AS=24P AD=24P PS=36U PD=36U
+* device instance $56 r0 *1 54.2,19.9 NMOS
+M$56 2 2 1 14 NMOS L=1U W=14U AS=16P AD=16P PS=32U PD=32U
+* device instance $63 r0 *1 54.2,7.1 NMOS
+M$63 1 1 14 14 NMOS L=1U W=14U AS=16P AD=16P PS=32U PD=32U
+* device instance $70 r0 *1 140.9,69.4 PMOS
+M$70 4 5 8 8 PMOS L=2U W=35U AS=40P AD=40P PS=56U PD=56U
+* device instance $77 m90 *1 130.9,69.4 PMOS
+M$77 5 5 8 8 PMOS L=2U W=35U AS=40P AD=40P PS=56U PD=56U
+* device instance $84 r0 *1 203.1,38.3 PMOS
+M$84 7 2 13 13 PMOS L=1U W=160U AS=168P AD=168P PS=210U PD=210U
+* device instance $104 r0 *1 203.1,67.8 PMOS
+M$104 13 4 8 8 PMOS L=1U W=160U AS=168P AD=168P PS=210U PD=210U
+* device instance $124 r0 *1 52.7,69.9 PMOS
+M$124 2 9 8 8 PMOS L=2U W=20U AS=24P AD=24P PS=36U PD=36U
+* device instance $129 r0 *1 26.7,69.9 PMOS
+M$129 9 9 8 8 PMOS L=2U W=20U AS=24P AD=24P PS=36U PD=36U
+* device instance $139 r0 *1 228.8,106.6 R_POLY
+R$139 12 4 6000 R_POLY
+* device instance $154 m0 *1 249,103.3 POLY_CAP
+C$154 7 12 2.06856e-12 POLY_CAP
+.ENDS TOP

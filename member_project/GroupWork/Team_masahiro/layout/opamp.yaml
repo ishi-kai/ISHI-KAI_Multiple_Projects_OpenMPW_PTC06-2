@@ -1,0 +1,5 @@
+---
+target: opamp
+reference: lvs_work/opamp_reference.cir.txt
+netlist: "/home/masa/opamp/simulation/opamp.spice"
+schematic: "/home/masa/opamp/simulation/opamp.spice"

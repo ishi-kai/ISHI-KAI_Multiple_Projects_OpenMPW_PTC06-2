@@ -1,0 +1,57 @@
+v {xschem version=3.4.6RC file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N 730 70 730 120 {lab=GND}
+N 280 200 280 220 {lab=GND}
+N 390 200 390 220 {lab=GND}
+N 880 100 880 120 {lab=GND}
+N 280 30 420 30 {lab=#net1}
+N 280 30 280 140 {lab=#net1}
+N 390 50 390 140 {lab=#net2}
+N 390 50 420 50 {lab=#net2}
+N 720 70 730 70 {lab=GND}
+N 880 30 880 40 {lab=#net3}
+N 770 30 880 30 {lab=#net3}
+N 720 30 770 30 {lab=#net3}
+N 730 120 730 150 {lab=GND}
+N 720 50 810 50 {lab=out}
+C {devices/code.sym} 10 40 0 0 {name=PTC06_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value=".include $::LIB/mos.lib
+.include $::LIB/passive.lib
+.include $::LIB/diode.lib"
+spice_ignore=false}
+C {pfet_common_source_load_current.sym} 570 50 0 0 {name=x1}
+C {devices/vsource.sym} 280 170 0 0 {name=vin value="DC 3.37 AC 1.0" savecurrent=false}
+C {devices/vsource.sym} 390 170 0 0 {name=vbias value=1.1 savecurrent=false}
+C {devices/vsource.sym} 880 70 0 0 {name=Vdd value=5 savecurrent=false}
+C {devices/gnd.sym} 730 150 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} 880 120 0 0 {name=l2 lab=GND}
+C {devices/gnd.sym} 390 220 0 0 {name=l4 lab=GND}
+C {devices/gnd.sym} 280 220 0 0 {name=l5 lab=GND}
+C {devices/lab_pin.sym} 810 50 0 1 {name=p1 sig_type=std_logic lab=out}
+C {devices/code_shown.sym} 30 190 0 0 {name=s1 only_toplevel=false value="
+.option savecurrent
+.control
+op
+show m
+save all
+ac dec 20 1e3 1e10
+plot vdb(out)
+print @m.x1.m1[vgs]
+print @m.x1.m1[vds]
+print @m.x1.m1[vth]
+print @m.x1.m1[id]
+print @m.x1.m1[vgs] - @m.x1.m1[vth]
+print @m.x1.m2[vgs]
+print @m.x1.m2[vds]
+print @m.x1.m2[vth]
+print @m.x1.m2[id]
+print @m.x1.m2[vgs] - @m.x1.m2[vth]
+.endc
+"}

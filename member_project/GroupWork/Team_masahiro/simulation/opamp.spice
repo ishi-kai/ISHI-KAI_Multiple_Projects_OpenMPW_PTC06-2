@@ -1,0 +1,21 @@
+** sch_path: /home/masa/opamp/opamp.sch
+.subckt opamp vdd ib vinn vinp vout vss
+*.PININFO vinn:I vinp:I vss:B vdd:B vout:O ib:B
+M1 ib ib vss vss nmos L=2u W=20u m=1
+M2 net1 ib vss vss nmos L=2u W=20u m=1
+M3 net1 net1 vdd vdd pmos L=2u W=20u m=1
+M4 net3 net1 vdd vdd pmos L=2u W=20u m=1
+M5 net3 net3 net2 vss nmos L=1u W=14u m=1
+M6 net2 net2 vss vss nmos L=1u W=14u m=1
+M7 net4 vinn net6 vss nmos L=2u W=100u m=1
+M8 net5 vinp net6 vss nmos L=2u W=100u m=1
+M9 net6 ib vss vss nmos L=2u W=20u m=1
+M10 net4 net4 vdd vdd pmos L=2u W=35u m=1
+M11 net5 net4 vdd vdd pmos L=2u W=35u m=1
+M12 vout ib vss vss nmos L=1u W=80u m=1
+M13 net7 net5 vdd vdd pmos L=1u W=160u m=1
+M14 vout net3 net7 net7 pmos L=1u W=160u m=1
+C1 vout net8 poly_cap W=26 L=26
+R1 net5 net8 R_poly W=1 L=300
+.ends
+.end
