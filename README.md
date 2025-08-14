@@ -15,6 +15,13 @@
 -- ピン不足によりレイアアウト配置のみ  
 
 
+## 謝辞
+今年は[サンケン電気株式会社様](https://www.sanken-ele.co.jp/)にスポンサードしていただき、無事にテープアウトまでこぎつけました。  
+この場にて御礼申し上げます。  
+
+- ![スポンサー](https://ishi-kai.org/assets/images/shuttle/ISHIKAI_OpenMPW_PTC06_2.png)
+
+
 # 参加者リスト
 ## [個人参加者](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-2/tree/main#%E5%80%8B%E4%BA%BA%E5%8F%82%E5%8A%A0%E8%80%85%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3)
 - [aidera](./member_project/aidera/)
@@ -53,6 +60,9 @@
 # 個人参加者のデザイン
 個人参加のみなさまの回路図とレイアウトです。  
 今回はインバータ回路のみとなります。  
+[ISHI会版OpenMPW PTC06-2開始！！！～2025年PTC06（フェニテックシャトル）の相乗り募集～](https://ishi-kai.org/openmpw/shuttle/ptc06/2025/05/24/shuttle_ISHI-Kai_OpenMPW-PTC06-2_start.html)での成果物です。  
+
+
 
 ## [aidera](./member_project/aidera/)：Inverter回路
 ### 感想
