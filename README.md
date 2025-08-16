@@ -1,6 +1,6 @@
 # ISHI会版OpenMPW PTC06-2について
-これは、[ISHI会版OpenMPW PTC06-2](https://ishi-kai.org/openmpw/shuttle/ptc06/2025/05/24/shuttle_ISHI-Kai_OpenMPW-PTC06-2_start.html)にみんなで相乗りしたxschemによる回路図とklayoutによるレイアアウト置き場です。
-
+これは、[ISHI会版OpenMPW PTC06-2](https://ishi-kai.org/openmpw/shuttle/ptc06/2025/05/24/shuttle_ISHI-Kai_OpenMPW-PTC06-2_start.html)にみんなで相乗りしたxschemによる回路図とklayoutによるレイアアウト置き場です。  
+全18人による全24デザインの投稿がありました。  
 
 ## みんなの[相乗りチップ](Submitted/all_members_layout.gds)
 - ![all_members_layout](Submitted/all_members_layout.png)
@@ -23,6 +23,8 @@
 
 
 # 参加者リスト
+ISHI会版OpenMPW PTC06-2の全18人による全24デザインの投稿がありました。  
+
 ## [個人参加者](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-2/tree/main#%E5%80%8B%E4%BA%BA%E5%8F%82%E5%8A%A0%E8%80%85%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3)
 - [aidera](./member_project/aidera/)
 - [arstopia](./member_project/arstopia/)
@@ -240,41 +242,4 @@ Masahiroチーム（チーム組まなかったので個人になります。)�
 
 
 # 測定会
-## 製造されたチップ
-製造され、届いたチップたちです。
-- ![アルミ袋入り](images/chip_1.jpg)
-- ![中身](images/chip_2.jpg)
-- ![ベアダイ](images/baredie.jpg)
-- ![ベアダイを見る顕微鏡セット](images/microscope_baredie.jpg)
-
-
-## 簡易測定
-動作するか？簡易的に測定します。
-
-### ソケット利用
-測定にはチップ交換が簡単なようにソケットを利用します。
-
-- ![測定用ソケット](images/socket_1.jpg)
-- ![ソケットに入れた状態](images/socket_2.jpg)
-
-
-### インバーター回路の測定
-Analog Discovery3を利用して、0-5Vで変化するサイン波を入力し、その出力をオシロスコープモードで測定します。  
-結果は、正常にインバーター動作しているようです。  
-
-- ![AD3に接続](images/AD3_connect.jpg)
-- ![入力のサイン波](images/AD3_sine_wave.png)
-- ![出力結果](images/AD3_inverer_out.png)
-
-
-## お持ち帰りパッケージ
-チップを壊さずに持ち帰れるように静電気防止ウレタンと静電気防止袋を用意して持って帰ってもらいます。
-
-- ![静電気防止ウレタン](images/bringing_1.jpg)
-- ![静電気防止袋](images/bringing_2.jpg)
-
-
-### インバーター回路
-インバーター回路のできに満足する参加者様。
-
-- ![インバーター](images/measure_inverter_01.jpg)
+2026年1月、チップ到着予定。  
