@@ -15,6 +15,25 @@
 -- ピン不足によりレイアアウト配置のみ  
 
 
+### WSL Image
+上記の回路図やシミュレーション、レイアウト、DRC、LVSを実行するための環境をセットアップしたWSLイメージを用意しています。
+
+- [WSL Image](https://www.noritsuna.jp/download/ubuntu2204_PTC06-2.tar.xz)
+    - ID: ishikai
+    - Pass: ishikai
+
+#### Installing WSL Images
+`wsl --import-in-place ubuntu2204_PTC06-2 .\ubuntu2204_PTC06-2\ext4.vhdx`
+
+起動には"ubuntu2204_PTC06-2.lnk"をご利用ください。  
+
+
+#### Deleting WSL Images
+イメージも削除されるので注意してください。    
+
+`wsl --unregister ubuntu2204_PTC06-2`
+
+
 ## 謝辞
 今年は[サンケン電気株式会社様](https://www.sanken-ele.co.jp/)にスポンサードしていただき、無事にテープアウトまでこぎつけました。  
 この場にて御礼申し上げます。  
