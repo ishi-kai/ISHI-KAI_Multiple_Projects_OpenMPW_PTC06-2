@@ -5,6 +5,8 @@
 ## みんなの[相乗りチップ](Submitted/all_members_layout.gds)
 - ![all_members_layout](Submitted/all_members_layout.png)
 - ![all_members_layout_using](Submitted/all_members_layout_using.png)
+- ![chip_photo_hd](chip_photo/ICHIKEN_presents/still029_hd.jpg)
+    - ハイロックス社のマイクロスコープで撮影した画像をICHIKENさんより提供していただきました。
 
 ### 相乗りチップのラベル
 - 緑枠  
@@ -14,6 +16,10 @@
 - 紫枠  
 -- ピン不足によりレイアアウト配置のみ  
 
+### チップ写真
+- [チップ写真](chip_photo/ICHIKEN_presents/)
+- [高解像度チップ写真](chip_photo/ICHIKEN_presents/)
+    - ハイロックス社のマイクロスコープで撮影した画像をICHIKENさんより提供していただきました。
 
 ### WSL Image
 上記の回路図やシミュレーション、レイアウト、DRC、LVSを実行するための環境をセットアップしたWSLイメージを用意しています。
@@ -261,4 +267,27 @@ Masahiroチーム（チーム組まなかったので個人になります。)�
 
 
 # 測定会
-2026年1月、チップ到着予定。  
+## [2026年1月イベント](https://ishikai.connpass.com/event/378330/)
+### インバータ回路
+[reodon](./member_project/reodon/)さんのインバータは無事に動作しました。300kHzくらいでなまり始めるようですね。  
+- ![reodon_inv](./images/reodon_inv_01.jpg)
+- ![reodon_inv](./images/reodon_inv_02.jpg)
+
+
+[arstopia](./member_project/arstopia/)と[konikoni428](./member_project/konikoni428/)のインバータに関しては、マルチプレクサの中に入っているのですが、実は本シャトルはOpenRule1um PDKからNDAベースのフェニテックPDKに変換しています。  
+そこで変換ツールを利用しているのですが、多階層のCell化に対応していないという事情があります。そして、この回路はマルチプレクサにより多階層化されているため、手動変換した結果、変換時に不具合が生じてしまったようです。そのため、マルチプレクサ自体が動作不良を起こしてしまいました。  
+
+### OPAMP回路
+OPAMP隊の[XianDIY](./member_project/GroupWork/Team_Ando/ugeugeHigh/)、[Maehashi](./member_project/GroupWork/Team_Ando/YuMaehashi/)、[yamazaki](./member_project/sanken/yamazaki/)はみんな、位相補償キャパシタ不足で発振してました。  
+実は、シミュレーションで利用しているシミュレーションデータは、ファブから提供されたものではなく、実測により求めたもののため、実物と差異があり、その結果、想定より随分とキャパ下の容量が少なくなってしまったのが原因と思われます。  
+東海理化シャトルなど他のファブからちゃんとしたシミュレーションデータが提供されているシャトルで作れば、大丈夫だったのでは無いかと思います。  
+
+- ![OPAMP_01](./images/Masahiro_OPAMP_01.jpg)
+- ![OPAMP_02](./images/Masahiro_OPAMP_02.jpg)
+- ![OPAMP_03](./images/Masahiro_OPAMP_03.jpg)
+- ![OPAMP_04](./images/Masahiro_OPAMP_04.jpg)
+
+
+## [2026年2月イベント](https://ishikai.connpass.com/event/378334/)
+
+
