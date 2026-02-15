@@ -1,8 +1,9 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -770 -150 -670 -150 {lab=#net1}
 N -770 -150 -770 -130 {lab=#net1}
@@ -81,4 +82,4 @@ C {devices/code_shown.sym} -1420 -160 0 0 {name=s1 only_toplevel=false value="
 .measure ac ugf when vdb(out)=0
 .measure ac phase find vp(out) at=5.892989e6"
 }
-C {ISHI/circuit/complete/circuit.sym} -510 -70 0 0 {name=x1}
+C {circuit.sym} -510 -70 0 0 {name=x1}

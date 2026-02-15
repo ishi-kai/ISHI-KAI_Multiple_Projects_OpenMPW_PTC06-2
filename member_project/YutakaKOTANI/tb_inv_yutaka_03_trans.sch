@@ -1,8 +1,9 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 0 -160 0 -100 {lab=#net1}
 N 0 -70 20 -70 {lab=#net1}
@@ -40,13 +41,13 @@ value=".include $::LIB/mos.lib
 .include $::LIB/passive.lib
 .include $::LIB/diode.lib"
 spice_ignore=false}
-C {.xschem/symbols/OR1/primitives/pfet.sym} -20 -70 0 0 {name=M1 
+C {primitives/pfet.sym} -20 -70 0 0 {name=M1 
 model=pmos
 W=3.3u
 L=1u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/nfet.sym} -20 90 0 0 {name=M2 
+C {primitives/nfet.sym} -20 90 0 0 {name=M2 
 model=nmos
 W=2u
 L=1u

@@ -1,8 +1,9 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 40 -160 40 -120 {lab=vdd}
 N 40 -160 340 -160 {lab=vdd}
@@ -10,7 +11,7 @@ N 40 -60 40 -40 {lab=GND}
 N 40 -40 340 -40 {lab=GND}
 N 420 -80 440 -80 {lab=vgnout}
 N 420 -120 440 -120 {lab=vgpout}
-C {202508_2stageOpAmp/VthRef.sym} 360 -100 0 0 {name=x1}
+C {VthRef.sym} 360 -100 0 0 {name=x1}
 C {devices/vsource.sym} 40 -90 0 0 {name=V1 value="5.5 PWL(0 0 10u 0 110u 3 210u 4 510u 5.5)" savecurrent=false}
 C {devices/gnd.sym} 40 -40 0 0 {name=l1 lab=GND}
 C {devices/code.sym} -220 -140 0 0 {name=PTC06_MODELS

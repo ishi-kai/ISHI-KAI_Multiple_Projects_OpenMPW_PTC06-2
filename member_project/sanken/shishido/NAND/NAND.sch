@@ -1,8 +1,9 @@
-v {xschem version=3.4.7RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -90 -190 -90 -150 {lab=VDD}
 N 70 -190 70 -150 {lab=VDD}

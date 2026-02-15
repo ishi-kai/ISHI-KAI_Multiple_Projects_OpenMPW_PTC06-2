@@ -1,9 +1,9 @@
-v {xschem version=3.4.6RC file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 220 -260 330 -260 {
 lab=in}
@@ -94,4 +94,4 @@ value=".include $::LIB/mos.lib
 .include $::LIB/passive.lib
 .include $::LIB/diode.lib"
 spice_ignore=false}
-C {ishi/2stage_pc_3.sym} 440 -240 0 0 {name=x1}
+C {2stage_pc_3.sym} 440 -240 0 0 {name=x1}

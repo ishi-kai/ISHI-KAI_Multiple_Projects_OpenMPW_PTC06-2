@@ -1,8 +1,9 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 T {Dummy Poly in Differential Input Stage} -840 440 0 0 0.5 0.5 {}
 T {Startup for Ibias Circuit} -740 -170 1 0 0.5 0.5 {}

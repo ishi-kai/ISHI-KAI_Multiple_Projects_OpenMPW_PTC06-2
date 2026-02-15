@@ -1,9 +1,9 @@
-v {xschem version=3.4.6RC file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 850 -310 860 -310 {
 lab=out}
@@ -145,8 +145,8 @@ W=10u
 L=2.5u
 m=1
 }
-C {ishi/diffwl500-4.sym} 480 -130 0 0 {name=x1}
-C {ishi/source_g.sym} 730 -120 0 0 {name=x2}
+C {diffwl500-4.sym} 480 -130 0 0 {name=x1}
+C {source_g.sym} 730 -120 0 0 {name=x2}
 C {primitives/nfet.sym} -100 -300 0 0 {name=M4 
 model=nmos
 W=5u
@@ -165,4 +165,4 @@ W=10u
 L=2.5u
 m=1
 }
-C {ishi/VthRef.sym} -430 -370 0 0 {name=x3}
+C {VthRef.sym} -430 -370 0 0 {name=x3}

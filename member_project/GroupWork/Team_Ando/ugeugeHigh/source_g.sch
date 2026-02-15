@@ -1,9 +1,9 @@
-v {xschem version=3.4.6RC file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 30 -150 30 -50 {lab=out}
 N 30 -100 120 -100 {lab=out}
