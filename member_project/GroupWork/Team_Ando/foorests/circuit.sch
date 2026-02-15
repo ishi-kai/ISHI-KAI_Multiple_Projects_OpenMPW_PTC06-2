@@ -1,8 +1,9 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -250 -230 -250 -120 {lab=#net1}
 N -20 -230 -20 -110 {lab=#net2}
@@ -179,31 +180,31 @@ N 890 -660 920 -660 {lab=vdd}
 N -630 -160 -550 -160 {lab=vss}
 N -550 -160 -550 10 {lab=vss}
 N -1170 -530 -1140 -530 {lab=#net9}
-C {.xschem/symbols/OR1/primitives/pfet.sym} -270 -260 0 0 {name=M1 
+C {primitives/pfet.sym} -270 -260 0 0 {name=M1 
 model=pmos
 W=200u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/pfet.sym} 0 -260 0 1 {name=M2 
+C {primitives/pfet.sym} 0 -260 0 1 {name=M2 
 model=pmos
 W=200u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/nfet.sym} -230 -90 0 1 {name=M3 
+C {primitives/nfet.sym} -230 -90 0 1 {name=M3 
 model=nmos
 W=10u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/nfet.sym} -40 -90 0 0 {name=M4 
+C {primitives/nfet.sym} -40 -90 0 0 {name=M4 
 model=nmos
 W=10u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/pfet.sym} -180 -510 0 0 {name=M5 
+C {primitives/pfet.sym} -180 -510 0 0 {name=M5 
 model=pmos
 W=40u
 L=2u
@@ -211,37 +212,37 @@ m=1
 }
 C {devices/ipin.sym} -350 -260 0 0 {name=p1 lab=Vinn}
 C {devices/ipin.sym} 90 -260 2 0 {name=p2 lab=Vinp}
-C {.xschem/symbols/OR1/primitives/nfet.sym} -650 -60 0 0 {name=M6 
+C {primitives/nfet.sym} -650 -60 0 0 {name=M6 
 model=nmos
 W=10u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/nfet.sym} -650 -160 0 0 {name=M7 
+C {primitives/nfet.sym} -650 -160 0 0 {name=M7 
 model=nmos
 W=10u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/pfet.sym} -650 -610 0 0 {name=M8 
+C {primitives/pfet.sym} -650 -610 0 0 {name=M8 
 model=pmos
 W=20u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/nfet.sym} 300 -330 1 0 {name=M9 
+C {primitives/nfet.sym} 300 -330 1 0 {name=M9 
 model=nmos
 W=40u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/pfet.sym} 870 -610 0 0 {name=M10 
+C {primitives/pfet.sym} 870 -610 0 0 {name=M10 
 model=pmos
 W=400u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/nfet.sym} 870 -190 0 0 {name=M11 
+C {primitives/nfet.sym} 870 -190 0 0 {name=M11 
 model=nmos
 W=200u
 L=2u
@@ -252,53 +253,53 @@ C {devices/opin.sym} 960 -280 0 0 {name=p7 lab=out
 
 }
 C {devices/ipin.sym} 1000 10 2 0 {name=p4 lab=vss}
-C {.xschem/symbols/OR1/primitives/pfet.sym} -750 -610 0 1 {name=M12 
+C {primitives/pfet.sym} -750 -610 0 1 {name=M12 
 model=pmos
 W=20u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/nfet.sym} -790 -460 0 0 {name=M13 
+C {primitives/nfet.sym} -790 -460 0 0 {name=M13 
 model=nmos
 W=5u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/pfet.sym} -1000 -610 0 0 {name=M14 
+C {primitives/pfet.sym} -1000 -610 0 0 {name=M14 
 model=pmos
 W=20u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/nfet.sym} -960 -460 0 1 {name=M15 
+C {primitives/nfet.sym} -960 -460 0 1 {name=M15 
 model=nmos
 W=5u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/pfet.sym} -1270 -620 0 0 {name=M16 
+C {primitives/pfet.sym} -1270 -620 0 0 {name=M16 
 model=pmos
 W=100u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/pfet.sym} -1420 -620 0 1 {name=M17 
+C {primitives/pfet.sym} -1420 -620 0 1 {name=M17 
 model=pmos
 W=100u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/HR_poly.sym} -1250 -360 0 0 {name=R1 model=HR_poly W=4 L=20}
-C {.xschem/symbols/OR1/primitives/nfet.sym} -1420 -400 0 1 {name=M18 
+C {primitives/HR_poly.sym} -1250 -360 0 0 {name=R1 model=HR_poly W=4 L=20}
+C {primitives/nfet.sym} -1420 -400 0 1 {name=M18 
 model=nmos
 W=20u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/nfet.sym} -1270 -470 0 0 {name=M19 
+C {primitives/nfet.sym} -1270 -470 0 0 {name=M19 
 model=nmos
 W=20u
 L=2u
 m=1
 }
-C {.xschem/symbols/OR1/primitives/Pdiff_cap.sym} 430 -310 1 0 {name=C2 model=Pdiff_cap W=18 L=10}
+C {primitives/Pdiff_cap.sym} 430 -310 1 0 {name=C2 model=Pdiff_cap W=18 L=10}
