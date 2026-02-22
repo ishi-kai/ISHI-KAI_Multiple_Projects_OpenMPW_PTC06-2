@@ -173,15 +173,14 @@ N 1020 980 1020 1000 {lab=VDD}
 N 0 60 0 80 {lab=GND}
 N 0 -80 0 -60 {lab=VDD}
 N -100 220 -100 240 {lab=VREF}
-N 60 0 180 0 {lab=vout}
-N -80 -20 -60 -20 {lab=#net3}
-N -100 20 -60 20 {lab=#net4}
-N -100 20 -100 160 {lab=#net4}
-N -100 140 -40 140 {lab=#net4}
-N 20 140 100 140 {lab=vout}
-N 100 0 100 140 {lab=vout}
-N -100 -40 -100 -20 {lab=#net3}
-N -100 -20 -80 -20 {lab=#net3}
+N 60 0 180 0 {lab=VOUT}
+N -80 -20 -60 -20 {lab=VIN}
+N -100 20 -60 20 {lab=#net3}
+N -100 20 -100 160 {lab=#net3}
+N -100 140 -40 140 {lab=#net3}
+N 20 140 100 140 {lab=VOUT}
+N 100 0 100 140 {lab=VOUT}
+N -100 -20 -80 -20 {lab=VIN}
 N -180 240 -180 260 {lab=VREF}
 N -180 260 -110 260 {lab=VREF}
 N -100 240 -100 260 {lab=VREF}
@@ -190,34 +189,26 @@ N -300 0 -300 40 {lab=VREF}
 N -300 -80 -300 -60 {lab=VDD}
 N -300 20 -160 20 {lab=VREF}
 N -160 20 -160 260 {lab=VREF}
-N -160 -60 -160 -40 {lab=VREF}
-N -220 -60 -220 -40 {lab=VREF}
-N -220 -180 -220 -120 {lab=#net3}
-N -220 -180 -80 -180 {lab=#net3}
-N -160 -180 -160 -120 {lab=#net3}
-N -20 -180 -0 -180 {lab=#net5}
-N 70 -180 100 -180 {lab=vout}
 N -110 260 -100 260 {lab=VREF}
-N 100 -180 100 -0 {lab=vout}
-N 60 -180 70 -180 {lab=vout}
-N -100 -180 -100 -40 {lab=#net3}
-N -160 -40 -160 20 {lab=VREF}
-N -220 -40 -160 -40 {lab=VREF}
-C {devices/code.sym} -880 -170 0 0 {name=PTC06_MODELS
+N -540 -80 -540 -40 {lab=VIN}
+N -540 20 -540 50 {lab=GND}
+N -120 -40 -120 -20 {lab=VIN}
+N -120 -20 -100 -20 {lab=VIN}
+C {devices/code.sym} -630 110 0 0 {name=PTC06_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value=".include $::LIB/mos.lib
 .include $::LIB/passive.lib
 .include $::LIB/diode.lib"
 spice_ignore=false}
-C {devices/code_shown.sym} -870 10 0 0 {name=spice only_toplevel=false value="
+C {devices/code_shown.sym} -620 290 0 0 {name=spice only_toplevel=false value="
 .option savecurrent
 .control
 save all
 
 * Tran analysis
 tran 0.001m 10m
-plot vout
+plot VIN VOUT
 .endc
 "}
 C {devices/vsource.sym} -620 -10 0 0 {name=Vdd value=5 savecurrent=false}
@@ -287,7 +278,7 @@ value=100k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 180 0 2 0 {name=p2 sig_type=std_logic lab=vout}
+C {devices/lab_pin.sym} 180 0 2 0 {name=p2 sig_type=std_logic lab=VOUT}
 C {devices/vdd.sym} -180 240 0 0 {name=l8 lab=VREF}
 C {devices/vdd.sym} -300 -80 0 0 {name=l10 lab=VDD}
 C {devices/res.sym} -300 -30 2 0 {name=R1
@@ -301,23 +292,7 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/gnd.sym} -300 120 0 0 {name=l14 lab=GND}
-C {devices/res.sym} 30 -180 1 0 {name=R4
-value=10k
-footprint=1206
-device=resistor
-m=1}
-C {devices/capa.sym} -50 -180 1 0 {name=C1
-m=1
-value=0.01u
-footprint=1206
-device="ceramic capacitor"}
-C {devices/res.sym} -160 -90 2 0 {name=R5
-value=10k
-footprint=1206
-device=resistor
-m=1}
-C {devices/capa.sym} -220 -90 2 0 {name=C2
-m=1
-value=0.01u
-footprint=1206
-device="ceramic capacitor"}
+C {devices/vsource.sym} -540 -10 0 0 {name=Vdd1 value="sin(2.5 0.5 1k 0 0 0)" savecurrent=false}
+C {devices/vdd.sym} -540 -80 0 0 {name=l1 lab=VIN}
+C {devices/gnd.sym} -540 50 0 0 {name=l2 lab=GND}
+C {devices/vdd.sym} -120 -40 0 0 {name=l3 lab=VIN}
